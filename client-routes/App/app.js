@@ -3,6 +3,8 @@ import {Router} from 'preact-router';
 import AsyncRoute from 'preact-async-route';
 import Toolbar from 'preact-material-components/Toolbar';
 import 'preact-material-components/Toolbar/style.css';
+import './app.css';
+
 export default class App extends Component{
   getProfile(url, cb, props){
     const componentOrPromise = import('../Users');

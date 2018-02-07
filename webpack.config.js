@@ -21,10 +21,16 @@ const config = {
       },
       {
         test: /\.css$/,
-        loader: ['style-loader', 'css-loader'],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader',
+        }),
       },
 	  ]
   },
+  plugins: [
+    new ExtractTextPlugin('styles.css')
+  ]
 };
 
 module.exports = config;

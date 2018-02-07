@@ -1,0 +1,7 @@
+{
+  "presets": [["es2015", {"modules": false}]],
+  "plugins":[
+    ["transform-react-jsx", { "pragma": "h" }],
+    "syntax-dynamic-import"
+  ]
+}
