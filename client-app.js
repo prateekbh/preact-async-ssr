@@ -4,6 +4,6 @@ import './client-app.css';
 
 render(
     <App></App>,
-  document.querySelector('.app'),
+  document.querySelector('body'),
   document.querySelector('.app')
 );
